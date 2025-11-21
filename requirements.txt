@@ -1,0 +1,59 @@
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.21.0
+python-dateutil>=2.8.0
+
+# Natural Language Processing
+spacy>=3.4.0
+nltk>=3.7
+textblob>=0.17.1
+sentence-transformers>=2.2.0
+transformers>=4.21.0
+
+# RAG and Vector Database
+chromadb>=0.4.0
+langchain>=0.0.200
+langchain-community>=0.0.20
+faiss-cpu>=1.7.3
+openai>=0.27.0  # Optional for OpenAI integration
+
+# Machine Learning & Analysis
+scikit-learn>=1.1.0
+networkx>=2.8.0
+scipy>=1.9.0
+
+# Visualization
+plotly>=5.10.0
+dash>=2.10.0
+streamlit>=1.22.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+wordcloud>=1.9.0
+
+# Data Processing
+emoji>=2.0.0
+regex>=2022.7.9
+pytz>=2022.1
+
+# Privacy & Security
+cryptography>=37.0.0
+hashlib2>=1.0.0
+
+# Web Framework
+flask>=2.2.0
+flask-cors>=3.0.10
+gunicorn>=20.1.0
+
+# Development & Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.971
+
+# Optional: Local LLM support
+ollama>=0.1.0  # Optional local LLM
+
+# Jupyter for analysis notebooks
+jupyter>=1.0.0
+ipykernel>=6.15.0
