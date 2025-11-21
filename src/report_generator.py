@@ -335,12 +335,64 @@ class WhatsAppReportGenerator:
         
         @media print {{
             body {{
-                background: white;
+                background: white !important;
                 padding: 0;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
             }}
             
             .container {{
                 box-shadow: none;
+                max-width: 100%;
+            }}
+            
+            /* Ensure all text is dark and readable */
+            * {{
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }}
+            
+            /* Force dark text for headings */
+            h1, h2, h3, h4, h5, h6 {{
+                color: #000000 !important;
+                page-break-after: avoid;
+            }}
+            
+            .header h1 {{
+                color: #000000 !important;
+            }}
+            
+            .section-title {{
+                color: #000000 !important;
+                page-break-after: avoid;
+            }}
+            
+            /* Ensure body text is dark */
+            p, div, span, li {{
+                color: #000000 !important;
+            }}
+            
+            /* Keep gradient backgrounds visible */
+            .stat-box, .score-badge, .judgment-box {{
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }}
+            
+            /* Prevent page breaks inside important sections */
+            .section, .stat-box, .indicator-item {{
+                page-break-inside: avoid;
+            }}
+            
+            /* Ensure progress bars show */
+            .progress-bar {{
+                border: 1px solid #000 !important;
+            }}
+            
+            .progress-fill {{
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }}
         }}
         
@@ -933,8 +985,57 @@ class WhatsAppReportGenerator:
     <title>WhatsApp Relationship Card</title>
     <style>
         @media print {{
-            @page {{ size: A4; margin: 0; }}
-            body {{ margin: 0; padding: 20px; }}
+            @page {{ 
+                size: A4; 
+                margin: 10mm; 
+            }}
+            
+            body {{ 
+                margin: 0; 
+                padding: 20px;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }}
+            
+            /* Force all colors to print exactly as shown */
+            * {{
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }}
+            
+            /* Ensure headings are dark */
+            .relationship-type, .confidence, strong, h3 {{
+                color: #000000 !important;
+            }}
+            
+            /* Keep gradient backgrounds */
+            .stat-box, .card {{
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }}
+            
+            /* Ensure text contrast */
+            .stat-label, .stat-value {{
+                color: #ffffff !important;
+                text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+            }}
+            
+            /* Keep insight text dark */
+            .insight-item {{
+                color: #000000 !important;
+            }}
+            
+            /* Progress bars */
+            .progress-bar {{
+                border: 1px solid #ddd !important;
+            }}
+            
+            .progress-fill {{
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }}
         }}
         
         * {{
