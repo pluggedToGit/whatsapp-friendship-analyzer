@@ -1,0 +1,43 @@
+title: WhatsApp Friendship Analyzer
+description: AI-powered relationship analyzer for WhatsApp chat exports with advanced pattern recognition and sentiment analysis
+theme: jekyll-theme-cayman
+repository: pluggedToGit/whatsapp-friendship-analyzer
+
+# GitHub Pages settings
+baseurl: "/whatsapp-friendship-analyzer"
+url: "https://pluggedtogit.github.io"
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true
+
+# Navigation
+nav_links:
+  - title: Home
+    url: /
+  - title: Technical Deep Dive
+    url: /TECHNICAL_DEEP_DIVE
+  - title: Architecture Diagrams
+    url: /ARCHITECTURE_DIAGRAMS
+  - title: Code Examples
+    url: /CODE_EXAMPLES
+  - title: GitHub
+    url: https://github.com/pluggedToGit/whatsapp-friendship-analyzer
+
+# Mermaid diagrams support
+mermaid:
+  enabled: true
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .venv
+  - __pycache__
+  - "*.pyc"
