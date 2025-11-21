@@ -84,7 +84,7 @@ This project helps you gain insights into your personal relationships by analyzi
 
 ```bash### Privacy-First Design
 
-git clone https://github.com/YOUR_USERNAME/whatsapp-friendship-analyzer.git- **Local Processing**: All data stays on your device
+git clone https://github.com/pluggedToGit/whatsapp-friendship-analyzer.git- **Local Processing**: All data stays on your device
 
 cd whatsapp-friendship-analyzer- **Encryption**: Sensitive data encrypted at rest
 
@@ -401,7 +401,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ### Development Setup
 ```bash
 # Clone and setup
-git clone https://github.com/YOUR_USERNAME/whatsapp-friendship-analyzer.git
+git clone https://github.com/pluggedToGit/whatsapp-friendship-analyzer.git
 cd whatsapp-friendship-analyzer
 python -m venv .venv
 source .venv/bin/activate
