@@ -1,0 +1,24 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		productRefGroup = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+	};
+	buildSettings = {
+		PRODUCT_NAME = "WhatsApp Analyzer";
+		PRODUCT_BUNDLE_IDENTIFIER = "com.whatsapp.analyzer";
+		TARGETED_DEVICE_FAMILY = "1,2";
+		IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+		SWIFT_VERSION = 5.0;
+		DEVELOPMENT_TEAM = "";
+	};
+}
